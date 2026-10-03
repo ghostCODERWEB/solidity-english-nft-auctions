@@ -1,0 +1,11 @@
+{
+  "name": "solidity-english-nft-auctions",
+  "title": "English NFT auction escrow",
+  "contract": "NFTAuctions",
+  "description": "ERC721 English auctions with token bids, anti-sniping extensions, reserve prices and pull refunds.",
+  "args": [
+    "$TOKEN",
+    "$ADMIN"
+  ],
+  "assumptions": "No auction fees or royalties. Bids escrow the full new amount and return old bids as credits. Recipient contracts must accept ERC721 safe transfer at settlement. Anti-sniping extension can prolong auctions indefinitely under continued bids."
+}
